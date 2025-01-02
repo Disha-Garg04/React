@@ -5,10 +5,12 @@ import './App.css'
 
 function App() {
 
-const [counter, setCounter] = useState(5)
-const [remover, setRemover] = useState(7)
+let [counter, setCounter] = useState(5)
 const addValue = () => {
-  setCounter(counter + 1)
+  setCounter(counter++)
+  setCounter(counter++)
+  setCounter(counter++)
+  // setCounter(counter++)
 }
 const removeValue = () => {
   setCounter(counter - 1)
